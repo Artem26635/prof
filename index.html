@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Заголовок страницы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1 class="text-h1 header-h1">
+        Шапка страницы(тут нужно будет придумать оглавление и возможно навигацию
+        по странице)
+      </h1>
+    </div>
+    <!-- Грид -->
+    <div class="family-tree">
+      <!-- == Линия древа Ирины == -->
+      <!-- == Линия древа Алексея == -->
+      <!-- == Линия древа Оксаны == -->
+      <!-- == Линия древа Артура == -->
+
+      <!-- == Истоки == -->
+
+      <!-- Прадед Куркен -->
+      <div
+        class="person"
+        style="grid-column: col1-start/col1-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед">
+        <p class="text-person">Куркен</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка Мемзариха-->
+      <div
+        class="person"
+        style="grid-column: col2-start/col2-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка">
+        <p class="text-person">Мемзар</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col1-end/col2-start; grid-row: row1-start/row1-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation"
+        style="
+          grid-column: col1-end/col2-start;
+          grid-row: line1-start/line1-end;
+        "
+      ></div>
+      <!-- Прадед2 Неизв-->
+      <div
+        class="person"
+        style="grid-column: col3-start/col3-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед2">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка2 Наталья-->
+      <div
+        class="person"
+        style="grid-column: col4-start/col4-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка2">
+        <p class="text-person">Наталья</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col3-end/col4-start; grid-row: row1-start/row1-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation"
+        style="
+          grid-column: col3-end/col4-start;
+          grid-row: line1-start/line1-end;
+        "
+      ></div>
+
+      <!-- === 2-ое поколение === -->
+
+      <!-- Дед Арут -->
+      <div
+        class="person"
+        style="grid-column: col1-end/col2-start; grid-row: row2-start/row2-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Дед">
+        <p class="text-person">Арут</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Бабка Надежда -->
+      <div
+        class="person"
+        style="grid-column: col3-end/col4-start; grid-row: row2-start/row2-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Бабка">
+        <p class="text-person">Надежда</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col2-start/col3-end; grid-row: row2-start/row2-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation"
+        style="
+          grid-column: col2-end/col3-start;
+          grid-row: line2-start/line2-end;
+        "
+      ></div>
+
+      <!-- === 3-е поколение === -->
+
+      <!-- Артур -->
+      <div
+        class="person"
+        style="
+          grid-column: c-line-row2-s/c-line-row2-e;
+          grid-row: row3-start/row3-end;
+        "
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Папка">
+        <p class="text-person">Артур</p>
+        <p class="text-person-date">1975</p>
+      </div>
+
+      <!-- === Линия древа Оксаны === -->
+
+      <!-- Прадед Неизв-->
+      <div
+        class="person"
+        style="grid-column: col5-start/col5-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка Неизв-->
+      <div
+        class="person"
+        style="grid-column: col6-start/col6-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col5-end/col6-start; grid-row: row1-start/row1-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation"
+        style="
+          grid-column: col5-end/col6-start;
+          grid-row: line1-start/line1-end;
+        "
+      ></div>
+      <!-- Прадед2 Анатолий -->
+      <div
+        class="person"
+        style="grid-column: col7-start/col7-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед2">
+        <p class="text-person">Анатолий</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка2 Зоя -->
+      <div
+        class="person"
+        style="grid-column: col8-start/col8-end; grid-row: row1-start/row1-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка2">
+        <p class="text-person">Зоя</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col7-end/col8-start; grid-row: row1-start/row1-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation"
+        style="
+          grid-column: col7-end/col8-start;
+          grid-row: line1-start/line1-end;
+        "
+      ></div>
+
+      <!-- === 2-ое поколение === -->
+
+      <!-- Дед Неизв -->
+      <div
+        class="person"
+        style="grid-column: col5-end/col6-start; grid-row: row2-start/row2-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Дед">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Бабка Тамара -->
+      <div
+        class="person"
+        style="grid-column: col7-end/col8-start; grid-row: row2-start/row2-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Бабка">
+        <p class="text-person">Тамара</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col6-start/col7-end; grid-row: row2-start/row2-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation"
+        style="
+          grid-column: col6-end/col7-start;
+          grid-row: line2-start/line2-end;
+        "
+      ></div>
+
+      <!-- === 3-е поколение === -->
+
+      <!-- Оксана -->
+      <div
+        class="person"
+        style="
+          grid-column: c-line2-row2-s/c-line2-row2-e;
+          grid-row: row3-start/row3-end;
+        "
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Мамка">
+        <p class="text-person">Оксана</p>
+        <p class="text-person-date">1971</p>
+      </div>
+
+      <!-- === 1-й корень + 2-й корень -->
+
+      <!-- линия брака Оксана - Артур -->
+      <div
+        class="line-married"
+        style="
+          grid-column: c-line-row2-e/c-line2-row2-s;
+          grid-row: row3-start/row3-end;
+        "
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation"
+        style="
+          grid-column: col4-end/col5-start;
+          grid-row: line3-start/line3-end;
+        "
+      ></div>
+
+      <!-- === 4-е поколение === -->
+
+      <!-- Артём -->
+      <div
+        class="person"
+        style="grid-column: col4-end/col5-start; grid-row: row4-start/row4-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Артём">
+        <p class="text-person">Артём</p>
+        <p class="text-person-date">1998</p>
+      </div>
+
+      <!-- = Крошечное поколение = -->
+
+      <!-- Миша -->
+      <div
+        class="person"
+        style="grid-column: col5-end/col6-start; grid-row: row4-end/row5-start"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Миша">
+        <p class="text-person">Миша</p>
+        <p class="text-person-date">1998</p>
+      </div>
+      <!-- линия детская -->
+      <div
+        class="line-generation-right"
+        style="grid-column: line-middle/col5-end; grid-row: row4-end/row5-start"
+      ></div>
+
+      <!-- === нижняя часть древа==== -->
+      <!-- === 4-е поколение === -->
+
+      <!-- Ирена -->
+      <div
+        class="person"
+        style="grid-column: col4-end/col5-start; grid-row: row5-start/row5-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Ирена">
+        <p class="text-person">Ирена</p>
+        <p class="text-person-date">1998</p>
+      </div>
+      <!-- линия брака Ирена - Артём -->
+      <div
+        class="line-married line-married-vertical"
+        style="grid-column: col4-end/col5-start; grid-row: row4-end/row5-start"
+      ></div>
+
+      <!-- == Линия древа Алексея == -->
+      <!-- === 3-е поколение === -->
+
+      <!-- Алексей -->
+      <div
+        class="person"
+        style="
+          grid-column: c-line-row2-s/c-line-row2-e;
+          grid-row: row6-start/row6-end;
+        "
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Папка">
+        <p class="text-person">Алексей</p>
+        <p class="text-person-date">1975</p>
+      </div>
+      <!-- === 2-ое поколение === -->
+
+      <!-- Дед Неизв-->
+      <div
+        class="person"
+        style="grid-column: col1-end/col2-start; grid-row: row7-start/row7-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Дед">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Бабка Неизв -->
+      <div
+        class="person"
+        style="grid-column: col3-end/col4-start; grid-row: row7-start/row7-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Бабка">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col2-start/col3-end; grid-row: row7-start/row7-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation-up"
+        style="
+          grid-column: col2-end/col3-start;
+          grid-row: line7-start/line7-end;
+        "
+      ></div>
+
+      <!-- == Истоки == -->
+
+      <!-- Прадед Неизв-->
+      <div
+        class="person"
+        style="grid-column: col1-start/col1-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка Неизв-->
+      <div
+        class="person"
+        style="grid-column: col2-start/col2-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col1-end/col2-start; grid-row: row8-start/row8-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation-up"
+        style="
+          grid-column: col1-end/col2-start;
+          grid-row: line8-start/line8-end;
+        "
+      ></div>
+      <!-- Прадед2 Неизв-->
+      <div
+        class="person"
+        style="grid-column: col3-start/col3-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед2">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка2 Неизв-->
+      <div
+        class="person"
+        style="grid-column: col4-start/col4-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка2">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col3-end/col4-start; grid-row: row8-start/row8-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation-up"
+        style="
+          grid-column: col3-end/col4-start;
+          grid-row: line8-start/line8-end;
+        "
+      ></div>
+
+      <!-- линия брака Ирина - Алексей -->
+      <div
+        class="line-married"
+        style="
+          grid-column: c-line-row2-e/c-line2-row2-s;
+          grid-row: row6-start/row6-end;
+        "
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation-up"
+        style="
+          grid-column: col4-end/col5-start;
+          grid-row: line6-start/line6-end;
+        "
+      ></div>
+
+      <!-- === Линия древа Ирины === -->
+      <!-- === 3-е поколение === -->
+
+      <!-- Ирина -->
+      <div
+        class="person"
+        style="
+          grid-column: c-line2-row2-s/c-line2-row2-e;
+          grid-row: row6-start/row6-end;
+        "
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Мамка">
+        <p class="text-person">Ирина</p>
+        <p class="text-person-date">1971</p>
+      </div>
+
+      <!-- === 2-ое поколение === -->
+
+      <!-- Дед Неизв -->
+      <div
+        class="person"
+        style="grid-column: col5-end/col6-start; grid-row: row7-start/row7-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Дед">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Бабка Неизв -->
+      <div
+        class="person"
+        style="grid-column: col7-end/col8-start; grid-row: row7-start/row7-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Бабка">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col6-start/col7-end; grid-row: row7-start/row7-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation-up"
+        style="
+          grid-column: col6-end/col7-start;
+          grid-row: line7-start/line7-end;
+        "
+      ></div>
+
+      <!-- === Истоки === -->
+
+      <!-- Прадед Неизв -->
+      <div
+        class="person"
+        style="grid-column: col5-start/col5-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка Неизв -->
+      <div
+        class="person"
+        style="grid-column: col6-start/col6-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col5-end/col6-start; grid-row: row8-start/row8-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation-up"
+        style="
+          grid-column: col5-end/col6-start;
+          grid-row: line8-start/line8-end;
+        "
+      ></div>
+      <!-- Прадед2 Неизв -->
+      <div
+        class="person"
+        style="grid-column: col7-start/col7-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прадед2">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- Прабабка2 Неизв -->
+      <div
+        class="person"
+        style="grid-column: col8-start/col8-end; grid-row: row8-start/row8-end"
+      >
+        <img class="person_img" src="/img/Artem.jpg" alt="Прабабка2">
+        <p class="text-person">Неизв</p>
+        <p class="text-person-date">1900</p>
+      </div>
+      <!-- линия брака -->
+      <div
+        class="line-married"
+        style="grid-column: col7-end/col8-start; grid-row: row8-start/row8-end"
+      ></div>
+      <!-- вертикальная линия -->
+      <div
+        class="line-generation-up"
+        style="
+          grid-column: col7-end/col8-start;
+          grid-row: line8-start/line8-end;
+        "
+      ></div>
+      <!-- конец грида -->
+    </div>
+  </body>
+</html>
+<!-- отдельно сделать-->
+<!-- тест стилей -->
+<!-- <p>Здравствуйте</p>
+  <a class="test-a"href="#">Ссылка</a> -->

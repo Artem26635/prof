@@ -1,0 +1,274 @@
+/* База */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Общие настройки */
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+.test-a {
+  color: #4DD0E1;
+}
+
+/* настройки цвета */
+:root {
+  --accent-color-Name: #ffffff;
+  --accent-color-line: #ffd700;
+  --accent-color-body: #3a5075;
+  --accent-person-background: #f5e6d3;
+  --accent-person-text: #2c2c2c;
+  --accent-person-border: #c9b09b;
+  --accent-border-img: #e8d5b5;
+}
+/* Конфигурации текста */
+.text-h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+}
+.text-h2 {
+}
+.text-h3 {
+}
+.text-h4 {
+}
+.text-h5 {
+  font-family: "Georgia";
+  font-weight: 500;
+  font-size: 12px;
+}
+.text-h6 {
+}
+.text-p {
+}
+/* текст карточки (имя) */
+.text-person {
+  font-family: "Georgia";
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--accent-person-text);
+}
+/* дата жизни */
+.text-person-date {
+  font-family: "Georgia";
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--accent-person-text);
+  margin-bottom: 8px;
+}
+
+/* Тело страницы */
+body {
+  /*  
+  background-image: url('/img/page3.jpeg');
+  background-size: cover;
+  background-position: ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  */
+  
+  background-color: var(--accent-color-body);
+  width: 1920px;
+  height: 1080px;
+  margin: 0;
+  padding: 0;
+  color: #E0E4E8;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 300px;
+  padding-top: 70px;
+}
+.header-h1 {
+  text-align: center;
+  color: #B8D4E3;
+  text-transform: uppercase;
+}
+
+/* 1. Грид */
+.family-tree {
+  display: grid;
+  
+  /* колонки */
+  grid-template-columns:
+   [col1-start] 100px
+   [col1-end] 100px
+   [col2-start] 70px
+   [c-line-row2-s] 30px
+   [col2-end] 30px
+   [col3-start] 30px
+   [c-line-row2-e] 70px
+   [col3-end] 100px
+   [col4-start] 100px
+   [col4-end] 40px
+   [line-middle] 40px
+   /* 2-й корень */
+   [col5-start] 100px
+   [col5-end] 100px
+   [col6-start] 70px
+   [c-line2-row2-s] 30px
+   [col6-end] 30px
+   [col7-start] 30px
+   [c-line2-row2-e] 70px
+   [col7-end] 100px
+   [col8-start] 100px
+   [col8-end] 30px;
+   
+   /* ряды */
+  grid-template-rows:
+   [row1-start] 80px
+   [line1-start] 50px
+   [row1-end] 10px
+   [line1-end] 1px
+   [row2-start] 80px
+   [line2-start] 50px
+   [row2-end] 10px
+   [line2-end] 1px
+   [row3-start] 80px
+   [line3-start] 50px
+   [row3-end] 10px
+   [line3-end] 1px
+   [row4-start] 130px
+   [row4-end] 130px
+   /* 2-я половина */
+   [row5-start] 130px
+   [row5-end] 1px
+   [line6-start] 10px
+   [row6-start] 50px
+   [line6-end] 80px
+   [row6-end] 1px
+   [line7-start] 10px
+   [row7-start] 50px
+   [line7-end] 80px
+   [row7-end] 1px
+   [line8-start] 10px
+   [row8-start] 50px
+   [line8-end] 80px
+   [row8-end] 50px;
+   /* ====== */
+  column-gap: 10px;
+  row-gap: 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Стилизация карточек */
+.person {
+  background-color: var(--accent-person-background);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid var(--accent-person-border);
+  align-items: center;
+  justify-content: center;
+}
+.person_img {
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--accent-border-img);
+  border-radius: 50%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+/* линия брака */
+.line-married {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-person-border);
+  justify-self: center;
+  align-self: center;
+}
+/* линия брака вертикальная */
+.line-married-vertical {
+  width: 3px;
+  height: 100%;
+}
+/* ромбик на линии брачной */
+.line-married::after {
+  content: "◆";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent-person-border);
+  font-size: 14px;
+  background-color: var(--accent-color-body);
+  padding: 0 4px;
+}
+/* вертикальная линия*/
+.line-generation {
+  position: relative;
+  width: 3px;
+  height: 100%;
+  background-color: var(--accent-person-border);
+  justify-self: center;
+}
+/* стрелка на вертикальной линии */
+.line-generation::after {
+  content: "▼";
+  position: absolute;
+  color: var(--accent-person-border);
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+/* вертикальная линия стрелкой вверх */
+.line-generation-up {
+  position: relative;
+  width: 3px;
+  height: 100%;
+  background-color: var(--accent-person-border);
+  justify-self: center;
+}
+/* стрелка на вертикальной линии */
+.line-generation-up::after {
+  content: "▼";
+  position: absolute;
+  color: var(--accent-person-border);
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%) rotate(180deg);
+  font-size: 14px;
+}
+/* горизонтальная линия стрелкой вправо*/
+.line-generation-right {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: var(--accent-person-border);
+  justify-self: center;
+  align-self: center;
+}
+/* стрелка на вертикальной линии вправо */
+.line-generation-right::after {
+  content: "▼";
+  position: absolute;
+  color: var(--accent-person-border);
+  top: 50%;
+  right: -8px;
+  transform:translateY(-50%) rotate(-90deg) ;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+/* убрать gap у колонки */
+/* .column-no-gap {
+  margin-left: calc(-1 * var(--gap, 20px) / 2);
+  margin-right: calc(-1 * var(--gap, 20px) / 2);
+} */
